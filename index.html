@@ -17,40 +17,68 @@
         <h1>D3Times</h1>
       </div>
     </div>
+
     <div class="row">
-      <div class="col-xs-12  col-md-9">
-        <div id="scatter">
-          <!-- We append our chart here. -->
+        <div class="col-xs-12  col-md-9">
+          <div class="article">
+              <h2>Correlations Discovered Between Demographics and Health Risk Factors</h2>
+              <p>The U.S. Census Bureau collects data on demographics information and the 
+                Behavioral Risk Factor Surveillance System (BRFSS) collects health risk factors. 
+                From the Census and BRFSS, the following 2014 demographic data (poverty percentage, 
+                age, and medium income) and the following 2014 health risk factors 
+                (percent without healthcare, percent obese, and percent smokes) where selected by state. 
+                The selected information was analyzed to produce the following interactive chart 
+                and analysis. The demographic data is mapped to the horizontal axis and the healthcare 
+                risk factors are mapped to the vertical axis. The bolded label is the active label. </p>
+           </div>
         </div>
       </div>
-    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-md-9">
+            <div id="scatter">
+                <div class="chart"></div>
+            </div>
+          </div>
+     </div>
+
     <div class="row">
       <div class="col-xs-12  col-md-9">
         <div class="article">
-          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+  
+          <h5>Percent Without Healthcare </h5>
+          <p>The data shows the variables “% in poverty” and “% without Healthcare” are positively 
+            correlated with a correlation coefficient of 0.524 (strong correlation). In other words, 
+            the higher the poverty rate the higher percentage of individuals without healthcare. 
+            Alternatively, “% without Healthcare” is negatively correlated with “Age” and 
+            “Medium Income”. </p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h5>Percent Obese </h5>
+          <p>The data shows the variables “% in poverty” and “% Obese” are positively correlated with 
+            a correlation coefficient of 0.462 (strong correlation). “% Obese” has little correlation 
+            with “Age” whereas “% Obese“ is negatively correlated with “Medium Income” (strong negative 
+            correlation of -0.651). </p>
 
-          <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
-            quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-            ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          <h5>Percent Smokes </h5>
+          <p>The data shows the variables “% in poverty” and “Age” are positively correlated with 
+            “% Smokes”. “% Smokes“ is negatively correlated with “Medium Income” 
+            (correlation = -0.660). </p>
+
         </div>
       </div>
     </div>
   </div>
 
-  <div class="chart"></div>
+  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script type="text/javascript" src="assets/js/app_1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/LinearFit.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
 
 </body>
 
